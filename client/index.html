@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>»Sjoerd Gourley - Developer«</title>
+  <meta name="description" content="Persoonlijke website voor en gemaakt door Sjoerd Gourley.">
+  <meta name="keywords" content="Developer, Web-Developer, Web, HTML5, CSS">
+  <meta name="author" content="Sjoerd Gourley">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/dice.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Pacifico&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="diceContainer">
+    <button id="pressMe" class="pressMe" onclick="rollDices();">Druk hier</button>
+    <div class="player1">
+      <h2>Player 1</h2>
+      <img id="imageP1" src="images/dice/dice1.png" alt="">
+    </div>
+    <div class="player2">
+      <h2>Player 2</h2>
+      <img id="imageP2" src="images/dice/dice6.png" alt="">
+    </div>
+    <h4 id="eventMessage">Hallo, je bent verbonden. Laten we wachten op je tegenstander. <br> Speel ondertussen tegen de computer.</h4>
+    <h1 id="winner" class="whoWins">Wie wint??</h1>
+  </div>
+  <script src="https://kit.fontawesome.com/47e899375d.js" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="JS/client.js"></script>
+</body>
+
+</html>

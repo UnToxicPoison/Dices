@@ -1,0 +1,97 @@
+body{
+  background-color: #e4f9f5;
+  margin: 0;
+}
+
+html{
+  margin: 0;
+}
+
+.diceContainer{
+  align-content: stretch;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  top: 30%;
+}
+
+.diceContainer .pressMe{
+  background: none;
+  border: none;
+  color: #11999e;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 8rem;
+  padding: 0;
+  position: absolute;
+  top: 3%;
+}
+
+.pressMe:focus{
+  outline: none;
+}
+
+.pressMe:hover{
+  cursor: pointer;
+}
+
+.diceContainer h2{
+  font-family: 'Kaushan Script', cursive;
+  margin-top: 50px;
+  margin: 0;
+}
+
+.diceContainer h4{
+  font-family: 'Kaushan Script', cursive;
+  position: absolute;
+  bottom: 20%;
+  margin: 0;
+}
+
+.diceContainer > .player1{
+  margin-right: 20px;
+  width: 250px;
+}
+
+.diceContainer > .player2{
+  margin-left: 20px;
+  width: 250px;
+}
+
+
+.diceContainer img{
+  height: 100%;
+  width: 100%;
+}
+
+.diceContainer .whoWins{
+  bottom: 0;
+  color: #11999e;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 8rem;
+  margin: 0;
+  position: absolute;
+}
+
+
+@media only screen and (max-width : 630px) {
+  .whoWins{
+    font-size: 12vw !important;
+  }
+  .pressMe{
+    font-size: 12vw !important;
+  }
+  .diceContainer h2{
+    font-size: 8vw !important;
+  }
+}
+
+@media only screen and (max-width : 800px) {
+  .diceContainer h4{
+    font-size: 8vw !important;
+  }
+}
